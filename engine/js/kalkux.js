@@ -19,7 +19,7 @@
 // https://github.com/chuchurex/kalkux
 
 const Kalkux = {
-  version: '1.1.0',
+  version: '0.1.0-alpha',
   storeId: null,
   config: null,
   theme: null,
