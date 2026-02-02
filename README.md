@@ -27,6 +27,22 @@ Built for developers and AI agents that need to create stores fast.
 
 See `examples/kilig/` for a complete working store.
 
+## CDN
+
+Use jsDelivr to load the engine directly from this repo — no need to copy files:
+
+```html
+<!-- Latest from main -->
+<script src="https://cdn.jsdelivr.net/gh/chuchurex/kalkux@main/engine/js/kalkux.js"></script>
+<link  href="https://cdn.jsdelivr.net/gh/chuchurex/kalkux@main/engine/css/kalkux.css" rel="stylesheet">
+
+<!-- Pinned to a release tag (recommended for production) -->
+<script src="https://cdn.jsdelivr.net/gh/chuchurex/kalkux@v0.1.0-alpha/engine/js/kalkux.js"></script>
+<link  href="https://cdn.jsdelivr.net/gh/chuchurex/kalkux@v0.1.0-alpha/engine/css/kalkux.css" rel="stylesheet">
+```
+
+`@main` always serves the latest commit. Pin to a tag like `@v0.1.0-alpha` for stability.
+
 ## Architecture
 
 ```
@@ -132,7 +148,7 @@ Styles are injected as CSS custom properties on load:
 - [x] Generic variant system
 - [x] Theme injection via CSS custom properties
 - [x] Data source abstraction (local/API)
-- [ ] CDN to serve kalkux.js
+- [x] CDN to serve kalkux.js (jsDelivr)
 
 ### Phase 2 - Backend
 - [ ] REST API (FastAPI) for stores/config/products
